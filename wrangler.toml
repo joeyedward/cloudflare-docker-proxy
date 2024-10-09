@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "libcuda.so"
+CUSTOM_DOMAIN = "joeycloud.cn"
 
 [env.dev.vars]
 MODE = "debug"
@@ -31,7 +31,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.libcuda.so", custom_domain = true }
+route = { pattern = "docker-staging.joeycloud.cn", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
