@@ -8,17 +8,17 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  ["docker.joeycloud.cn" + CUSTOM_DOMAIN]: dockerHub,
-  ["quay.joeycloud.cn" + CUSTOM_DOMAIN]: "https://quay.io",
-  ["gcr.joeycloud.cn" + CUSTOM_DOMAIN]: "https://gcr.io",
-  ["k8s-gcr.joeycloud.cn" + CUSTOM_DOMAIN]: "https://k8s.gcr.io",
-  ["k8s.joeycloud.cn" + CUSTOM_DOMAIN]: "https://registry.k8s.io",
-  ["ghcr.joeycloud.cn" + CUSTOM_DOMAIN]: "https://ghcr.io",
-  ["cloudsmith.joeycloud.cn" + CUSTOM_DOMAIN]: "https://docker.cloudsmith.io",
-  ["ecr.joeycloud.cn" + CUSTOM_DOMAIN]: "https://public.ecr.aws",
+  "docker.joeycloud.cn": dockerHub,
+  "quay.joeycloud.cn": "https://quay.io",
+  "gcr.joeycloud.cn": "https://gcr.io",
+  "k8s-gcr.joeycloud.cn": "https://k8s.gcr.io",
+  "k8s.joeycloud.cn": "https://registry.k8s.io",
+  "ghcr.joeycloud.cn": "https://ghcr.io",
+  "cloudsmith.joeycloud.cn": "https://docker.cloudsmith.io",
+  "ecr.joeycloud.cn": "https://public.ecr.aws",
 
   // staging
-  ["docker-staging." + CUSTOM_DOMAIN]: dockerHub,
+  "docker-staging.joeycloud.cn": dockerHub,
 };
 
 function routeByHosts(host) {
